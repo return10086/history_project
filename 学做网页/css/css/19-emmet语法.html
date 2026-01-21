@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            /* fsize */
+            font-size: large;
+            /* 单词首字母提示 */
+            /* 标签宽399 高200 背景粉色 */
+            /* w300+h200+b */
+            width: 300px;
+            height: 200px;
+            background-color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <div></div>
+    <!-- div.box -->
+    <div class="box"></div>
+    <!-- p.box -->
+    <p class="box"></p>
+    <!-- id.box -->
+    <id class="box"></id>
+    <!-- p.red#one -->
+    <p class="red" id="one"></p>
+
+    <!-- 同级：div+p -->
+    <div></div>
+    <p></p>
+
+    <!-- 父子：ul>li -->
+    <ul>
+        <li></li>
+    </ul>
+
+    <!-- li有三个 ul>li*3 -->
+    <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+
+    <!-- li有三个 ul>li*3 li里有内容111-->
+    <!-- ul?>li*3{111} -->
+    <ul>
+        <li>111</li>
+        <li>111</li>
+        <li>111</li>
+    </ul>
+
+    <!-- 内容递增 -->
+    <!-- ul>li{$}*3 -->
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+    </ul>
+</body>
+
+</html>

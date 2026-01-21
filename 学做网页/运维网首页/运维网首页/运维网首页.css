@@ -1,0 +1,583 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+
+    background-color: #f3f5f7;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.w {
+    width: 1200px;
+    margin: 0 auto;
+    /* overflow: hidden; */
+}
+
+.header {
+    height: 42px;
+    margin: 30px auto;
+    /* overflow: hidden; */
+    /*注意层叠性*/
+}
+
+.logo {
+    width: 198px;
+    height: 42px;
+    display: inline-block;
+}
+
+.top_a {
+    width: 237px;
+    height: 22px;
+    /* background-color: pink; */
+    margin-top: 12px;
+    padding-bottom: 12px;
+    margin-left: 79px;
+    display: inline-block;
+
+    overflow: hidden;
+}
+
+.top_a div {
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 8px;
+    display: inline-block;
+}
+
+.top_a>a {
+    height: 18px;
+
+    font-family: MicrosoftYaHei;
+    font-size: 18px;
+    font-weight: normal;
+    font-stretch: normal;
+    letter-spacing: 2px;
+    display: inline-block;
+
+
+    color: #050505;
+}
+
+.top_a div:hover {
+    border-bottom: 2px solid #00a4ff;
+}
+
+.search {
+    width: 412px;
+    height: 40px;
+    border: solid 1px #00a4ff;
+    margin-left: 95px;
+    display: inline-block;
+    overflow: hidden;
+    box-sizing: border-box;
+
+}
+
+.search input {
+    background-color: #f3f5f7;
+    width: 340px;
+    height: 12px;
+    /* 消除边框 */
+    border: none;
+    /* 消除点击后的黑框 */
+    outline: none;
+    /* padding: 14px 0 14px 21px; */
+    font-size: 12px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    padding-left: 21px;
+    float: left;
+}
+
+.search button {
+    /* 消除边框 */
+    border: none;
+    /* 消除点击后的黑框 */
+    outline: none;
+    border: none;
+    background-image: url(./search_07.png);
+    background-color: #00a4ff;
+    background-position: center center;
+    width: 49px;
+    height: 40px;
+    background-repeat: no-repeat;
+    padding: 0;
+    margin: 0;
+    float: left;
+}
+
+.tou {
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    overflow: hidden;
+    /* background-color: pink; */
+    padding-left: 31px;
+    padding-bottom: 3px;
+
+}
+
+
+.name {
+    width: 81px;
+    height: 20px;
+    display: inline-block;
+    overflow: hidden;
+    padding-left: 6px;
+    padding-bottom: 10px;
+}
+
+.name a {
+    width: 81px;
+    height: 14px;
+    font-family: MicrosoftYaHei;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    letter-spacing: 1px;
+    color: #666666;
+}
+
+.pic {
+    height: 420px;
+    background-image: url(./bannar_03.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #1c036c;
+
+}
+
+.content {
+    width: 1200px;
+    height: 420px;
+    margin: 0 auto;
+}
+
+.list_a {
+    width: 190px;
+    height: 420px;
+    margin-right: 0;
+    background-color: #13014b;
+    float: left;
+    /* 半透明 */
+    opacity: 0.5;
+}
+
+.list_a li {
+    display: inline-block;
+    width: 190px;
+    height: 46px;
+    margin-right: 0;
+}
+
+.list_a li a {
+    display: inline-block;
+    padding: 20px 0 20px 20px;
+    color: white;
+    line-height: 1em;
+    font-family: MicrosoftYaHei;
+    font-size: 14px;
+    font-weight: normal;
+    letter-spacing: 1px;
+    color: #ffffff;
+
+}
+
+.list_a li p {
+    line-height: 1em;
+    color: white;
+    float: right;
+    padding-top: 20px;
+    padding-right: 21px;
+    font-size: 12px;
+}
+
+.list_a li:hover a {
+    color: #00b4ff;
+}
+
+.list_a li:hover p {
+    color: #00b4ff;
+}
+
+.class_schedule {
+    width: 228px;
+    height: 300px;
+    /* display: inline-block;*/
+    float: right;
+    margin-top: 50px;
+    font-size: 0;
+    background-color: #fff;
+}
+
+.class_schedule li {
+    display: inline-block;
+    width: 231px;
+}
+
+.class_schedule li div {
+    margin-left: 21px;
+    display: inline-block;
+    width: 192px;
+    box-sizing: border-box;
+    border-bottom: 2px solid #e5e5e5;
+    background-color: #fff;
+}
+
+.class_schedule_top {
+    display: inline-block;
+    font-family: MicrosoftYaHei-Bold;
+    font-size: 18px;
+    font-weight: normal;
+    font-stretch: normal;
+    line-height: 20px;
+    letter-spacing: 2px;
+    color: #ffffff;
+}
+
+.class_schedule_font1 {
+    width: 72px;
+    height: 1em;
+    font-family: FZLTCXHJW--GB1-0;
+    font-size: 16px;
+    font-weight: bold;
+    font-stretch: normal;
+    line-height: 20px;
+    letter-spacing: 0px;
+    color: #4e4e4e;
+
+    display: inline-block;
+}
+
+.class_schedule_font2 {
+
+    font-family: FZLTCXHJW--GB1-0;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 0px;
+    color: #4e4e4e;
+    display: inline-block;
+
+}
+
+.class_schedule_font3 {
+    padding-top: 5px;
+    font-family: FZLTCXHJW--GB1-0;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 0px;
+    color: #a5a5a5;
+    display: inline-block;
+}
+
+.class_schedule li div button {
+    width: 200px;
+    height: 41px;
+    border: solid 1px #00a4ff;
+    font-family: MicrosoftYaHei;
+    font-size: 16px;
+    font-weight: bold;
+    font-stretch: normal;
+    letter-spacing: 2px;
+    color: #00a4ff;
+    background-color: #fff;
+}
+
+.recommend {
+    width: 1200px;
+    height: 60px;
+    margin: 8px auto 0 auto;
+    padding: 21px 0;
+    box-sizing: border-box;
+    box-shadow: 0px 2px 3px 0px rgba(118, 118, 118, 0.2);
+    background-color: #fff;
+}
+
+.recommend_font1 {
+    width: 1140px;
+    height: 18px;
+    font-family: MicrosoftYaHei-Bold;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    letter-spacing: 0px;
+    color: #00a4ff;
+
+    padding: 0 34px;
+}
+
+.recommend_font2 {
+    font-family: MicrosoftYaHei;
+    font-size: 16px;
+    font-weight: normal;
+    letter-spacing: 0px;
+    color: #050505;
+
+    padding: 0 34px;
+}
+
+.recommend_font3 {
+    font-family: MicrosoftYaHei;
+    font-size: 14px;
+    font-weight: normal;
+    letter-spacing: 0px;
+    color: #00a4ff;
+
+    float: right;
+    padding: 0 26px 0 0;
+
+}
+
+#right_line {
+    border-right: 1px solid #bfbfbf;
+}
+
+.middle_title {
+    width: 1200px;
+    height: 19px;
+    margin: 37px auto 21px auto;
+    box-sizing: border-box;
+}
+
+.middle_title_font1 {
+    width: 80px;
+    height: 19px;
+    font-family: MicrosoftYaHei;
+    font-size: 20px;
+    font-weight: normal;
+    font-stretch: normal;
+    letter-spacing: 0px;
+    color: #494949;
+    display: inline-block;
+    line-height: 1em;
+}
+
+.middle_title_font2 {
+    width: 48px;
+    height: 11px;
+    font-family: MicrosoftYaHei;
+    font-size: 12px;
+    font-weight: normal;
+    font-stretch: normal;
+    letter-spacing: 0px;
+    color: #a5a5a5;
+    line-height: 1em;
+    float: right;
+    padding: 8px 35px 0 0;
+}
+
+.middle {
+    width: 1200px;
+    height: 556px;
+    margin: 0px auto 0px auto;
+    box-sizing: border-box;
+}
+
+.block1 {
+    width: 228px;
+    height: 270px;
+    margin-bottom: 16px;
+    margin-right: 15px;
+    background-color: white;
+    float: left;
+    text-align: center;
+    overflow: hidden;
+}
+
+.block1_font1 {
+    width: 184px;
+    height: 32px;
+    font-family: MicrosoftYaHei;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    line-height: 20px;
+    letter-spacing: 0px;
+    padding-top: 25px;
+    padding-left: 24px;
+    text-align: left;
+    color: #050505;
+}
+
+.block1_font2 {
+    width: 24px;
+    height: 11px;
+    font-family: MicrosoftYaHei;
+    font-size: 12px;
+    font-weight: normal;
+    font-stretch: normal;
+    letter-spacing: 0px;
+    color: #ff7c2d;
+    text-align: left;
+    padding-top: 20px;
+    padding-left: 23px;
+    float: left;
+}
+
+.block1_font3 {
+
+    font-family: MicrosoftYaHei;
+    font-size: 12px;
+    font-weight: normal;
+    letter-spacing: 0px;
+    color: #999999;
+    padding-top: 20px;
+    float: left;
+}
+
+.bottom {
+    margin-top: 40px;
+    background-color: #fff;
+    width: auto;
+    height: 417px;
+}
+
+.bottom_content {
+    width: 1200px;
+    height: 417px;
+    margin: 0 auto;
+}
+
+.bottom_content_left {
+    float: left;
+}
+
+.logo2 {
+    padding-top: 33px;
+    padding-left: 21px;
+}
+
+.remark {
+    padding-top: 11px;
+    padding-left: 20px;
+}
+
+.bottom_content button {
+    margin-top: 11px;
+    margin-left: 21px;
+    width: 120px;
+    height: 36px;
+    font-family: MicrosoftYaHei;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    line-height: 18px;
+    letter-spacing: 0px;
+    color: #00a4ff;
+    background-color: #fff;
+    border: solid 1px #00a4ff;
+}
+
+#bottom_content_font1 {
+    width: 432px;
+    height: 30px;
+    font-family: SimSun;
+    font-size: 12px;
+    font-weight: normal;
+    font-stretch: normal;
+    line-height: 18px;
+    letter-spacing: 0px;
+    color: #666666;
+    line-height: 1em;
+}
+
+#bottom_content_font2 {
+    width: 79px;
+    height: 17px;
+    font-family: MicrosoftYaHei;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    line-height: 21px;
+    letter-spacing: 0px;
+    color: #333333;
+}
+
+.list1 {
+    margin-left: 218px;
+    margin-top: 33px;
+    display: inline-block;
+    overflow: hidden;
+    vertical-align: top;
+
+}
+
+.list2 {
+    margin-left: 146px;
+    margin-top: 33px;
+    display: inline-block;
+    overflow: hidden;
+    /* 顶部对齐 */
+    vertical-align: top;
+}
+
+.list3 {
+    padding-left: 152px;
+    padding-top: 33px;
+    display: inline-block;
+    overflow: hidden;
+    vertical-align: top;
+}
+
+h1 {
+    width: auto;
+    height: 17px;
+    font-family: MicrosoftYaHei;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    line-height: 1em;
+    letter-spacing: 0px;
+    color: #333333;
+}
+
+.list1 ul li {
+    height: 21px;
+    overflow: hidden;
+}
+
+#bottom_content_font3 {
+    width: 47px;
+    height: 96px;
+    font-family: SimSun;
+    font-size: 12px;
+    font-weight: normal;
+    font-stretch: normal;
+    line-height: 21px;
+    letter-spacing: 0px;
+    color: #333333;
+}
+
+#bottom_content_font4 {
+    width: 95px;
+    height: 96px;
+    font-family: SimSun;
+    font-size: 12px;
+    font-weight: normal;
+    font-stretch: normal;
+    line-height: 21px;
+    letter-spacing: 0px;
+    color: #333333;
+}
+
+#bottom_content_font5 {
+    width: 47px;
+    height: 33px;
+    font-family: SimSun;
+    font-size: 12px;
+    font-weight: normal;
+    font-stretch: normal;
+    line-height: 21px;
+    letter-spacing: 0px;
+    color: #333333;
+}

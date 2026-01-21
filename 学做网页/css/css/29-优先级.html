@@ -1,0 +1,43 @@
+<!--
+ * @作者: 程佳乐
+ * @Date: 2023-07-30 06:34:27
+ * @LastEditTime: 2023-07-30 06:41:56
+ * @描述: 
+ * @FilePath: \css\29-优先级.html
+ * @人生目标: 全世界无产者联合起来
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            color: red;
+        }
+
+        div {
+            color: green;
+        }
+
+        .box {
+            color: blue !important;
+        }
+
+        #box {
+            color: orange;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 意义：当一个标签使用了多个选择器，样式冲突时，谁生效 -->
+    <!-- 继承<通配符选择器<类选择器<id选择器<行内样式<important -->
+    <!-- ！important不能提升继承优先级 -->
+    <div class="box" id="box" style="color:pink;">测试优先级</div>
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+<!--
+ * @作者: 程佳乐
+ * @Date: 2023-07-30 06:15:45
+ * @LastEditTime: 2023-07-30 06:25:26
+ * @描述: 
+ * @FilePath: \css\27-特性-继承性.html
+ * @人生目标: 全世界无产者联合起来
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            /* 对文字的控制 子类都能继承 */
+            color: red;
+            font-size: 50px;
+            /* 对div本身的控制 子类不能继承 */
+            height: 300px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        这是div里的文字
+        <span>这是div里面的span</span>
+        <!-- a标签的color继承会失效 -->
+        <a href="#">这是div里的超链接</a>
+        <!-- h标签的font-size继承会失效 无法完美继承-->
+        <h1>一级标题</h1>
+
+    </div>
+</body>
+
+</html>

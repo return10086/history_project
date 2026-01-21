@@ -1,0 +1,36 @@
+<!--
+ * @作者: 程佳乐
+ * @Date: 2023-07-30 06:26:46
+ * @LastEditTime: 2023-07-30 06:29:04
+ * @描述: 
+ * @FilePath: \css\28-特性-层叠性.html
+ * @人生目标: 全世界无产者联合起来
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            /* 后写的覆盖前写的 */
+            color: red;
+            color: green;
+        }
+
+        .box {
+            font-size: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- box和div共同作用 -->
+    <div class="box">文字</div>
+    <!-- 只有当选择器优先级相同时才能通过层叠性判断结果 -->
+</body>
+
+</html>

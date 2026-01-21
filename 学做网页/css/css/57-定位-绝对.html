@@ -1,0 +1,66 @@
+<!--
+ * @Author: 程佳乐 &&cjl2646289864@gmail.com
+ * @Date: 2023-08-15 23:46:05
+ * @LastEditors: 程佳乐 &&cjl2646289864@gmail.com
+ * @LastEditTime: 2023-08-16 00:20:23
+ * @FilePath: \css\57-定位-绝对.html
+ * @Description: 
+ * 
+ * Copyright (c) 2023 by cjl2646289864@gmail.com, All Rights Reserved. 
+-->
+<!--
+ * @Author: 程佳乐 &&cjl2646289864@gmail.com
+ * @Date: 2023-08-15 23:46:05
+ * @LastEditors: 程佳乐 &&cjl2646289864@gmail.com
+ * @LastEditTime: 2023-08-15 23:46:08
+ * @FilePath: \css\55-定位-静态.html
+ * @Description: 
+ * 
+ * Copyright (c) 2023 by cjl2646289864@gmail.com, All Rights Reserved. 
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            /*
+            绝对定位：
+            先找已经定位的父级 如果存在 就以该父级为参照物进行定位
+            如果有父级 但未定位 (body)以浏览器窗口为参照定位
+            */
+            position: absolute;
+            left: 50px;
+            top: 0;
+            /* 
+            特点
+            1、脱标准流 不占位置
+            2、改变标签的显示模式特点：变行内块
+            */
+
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+        }
+    </style>
+</head>
+
+<body>
+    <p>测试定位测试定位测试定位测试定位测试定位测试定位测试定位测试定位测试定位测试定位测试定位测试定位测试定位测试定位</p>
+    <p>测试定位测试定位测试定位测试定位测试定位测试定位测试定位测试定位测试定位测试定位测试定位测试定位测试定位测试定位</p>
+    <p>测试定位测试定位测试定位测试定位测试定位测试定位测试定位测试定位测试定位测试定位测试定位测试定位测试定位测试定位</p>
+    <p>测试定位测试定位测试定位测试定位测试定位测试定位测试定位测试定位测试定位测试定位测试定位测试定位测试定位测试定位</p>
+    <p>测试定位测试定位测试定位测试定位测试定位测试定位测试定位测试定位测试定位测试定位测试定位测试定位测试定位测试定位</p>
+    <div style="width: 200px; height: 200px; background-color: blue;">box</div>
+    <div class="box">box</div>
+    <p>测试定位测试定位测试定位测试定位测试定位测试定位测试定位测试定位测试定位测试定位测试定位测试定位测试定位测试定位</p>
+    <p>测试定位测试定位测试定位测试定位测试定位测试定位测试定位测试定位测试定位测试定位测试定位测试定位测试定位测试定位</p>
+    <p>测试定位测试定位测试定位测试定位测试定位测试定位测试定位测试定位测试定位测试定位测试定位测试定位测试定位测试定位</p>
+    <p>测试定位测试定位测试定位测试定位测试定位测试定位测试定位测试定位测试定位测试定位测试定位测试定位测试定位测试定位</p>
+
+</body>
+
+</html>

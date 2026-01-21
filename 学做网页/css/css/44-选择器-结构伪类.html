@@ -1,0 +1,56 @@
+<!--
+ * @作者: 程佳乐
+ * @Date: 2023-07-31 07:12:11
+ * @LastEditTime: 2023-07-31 08:53:24
+ * @描述: 
+ * @FilePath: \css\44-选择器-结构伪类.html
+ * @人生目标: 全世界无产者联合起来
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 选中第一个 */
+        li:first-child {
+            background-color: green;
+        }
+
+        /* 最后一个 */
+        li:last-child {
+            background-color: green;
+        }
+
+        /* 任意一个 */
+        li:nth-child(2) {
+            background-color: pink;
+        }
+
+        /* 倒数第二个 */
+        li:nth-last-child(2) {
+            background-color: blue;
+        }
+
+        /* 括号里可以是公式 */
+        /* 2n偶数 2n+-1奇数 -n+5前五个 n+5找到从第5个往后 */
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li>这是第1个li</li>
+        <li>这是第2个li</li>
+        <li>这是第3个li</li>
+        <li>这是第4个li</li>
+        <li>这是第5个li</li>
+        <li>这是第6个li</li>
+        <li>这是第7个li</li>
+        <li>这是第8个li</li>
+    </ul>
+</body>
+
+</html>

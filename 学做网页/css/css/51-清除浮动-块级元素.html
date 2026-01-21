@@ -1,0 +1,65 @@
+<!--
+ * @Author: 程佳乐 &&cjl2646289864@gmail.com
+ * @Date: 2023-08-13 23:43:34
+ * @LastEditors: 程佳乐 &&cjl2646289864@gmail.com
+ * @LastEditTime: 2023-08-14 00:43:03
+ * @FilePath: \css\51-清除浮动-块级元素.html
+ * @Description: 
+ * 
+ * Copyright (c) 2023 by cjl2646289864@gmail.com, All Rights Reserved. 
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .top {
+            margin: 0 auto;
+            width: 1000px;
+            /* height: 300px; */
+            background: pink;
+        }
+
+        .bottom {
+            margin: 0 auto;
+            width: auto;
+            height: 100px;
+            background-color: green;
+        }
+
+        .left {
+            width: 200px;
+            height: 300px;
+            background-color: #ccc;
+            float: left;
+        }
+
+        .right {
+            width: 790px;
+            height: 300px;
+            background-color: skyblue;
+            float: right;
+        }
+
+        .clearfix {
+            clear: both;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 父子级标签，父级没有高度，后面的标准流盒子会受到影响，显示到上面位置 -->
+    <div class="top">
+        <div class="left"></div>
+        <div class="right"></div>
+        <!-- ①清除左右两侧浮动的影响 -->
+        <div class="clearfix"></div>
+
+    </div>
+    <div class="bottom"></div>
+</body>
+
+</html>

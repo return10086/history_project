@@ -1,0 +1,78 @@
+<!--
+ * @Author: 程佳乐 &&cjl2646289864@gmail.com
+ * @Date: 2023-08-13 22:42:53
+ * @LastEditors: 程佳乐 &&cjl2646289864@gmail.com
+ * @LastEditTime: 2023-08-13 23:40:57
+ * @FilePath: \css\50-综合案例-小米模块案例.html
+ * @Description: 
+ * 
+ * Copyright (c) 2023 by cjl2646289864@gmail.com, All Rights Reserved. 
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            /* 默认清除所有内外边距 */
+            margin: 0;
+            padding: 0;
+        }
+
+        div {
+            box-sizing: border-box;
+        }
+
+        .block1 {
+            width: 234px;
+            height: 300px;
+            margin-bottom: 14px;
+            margin-right: 14px;
+            background-color: #87ceeb;
+            float: left;
+        }
+
+        .block2 {
+            width: 234px;
+            height: 614px;
+            margin-bottom: 14px;
+            margin-right: 14px;
+            background-color: #800080;
+            float: left;
+        }
+
+        .full {
+            width: 1226px;
+            height: 614px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="full">
+        <div class="block2"></div>
+        <div>
+            <div style="width: 992;height: 320px;">
+                <div class="block1">1</div>
+                <div class="block1">2</div>
+                <div class="block1">3</div>
+                <div class="block1" style="margin-right: 0;">4</div>
+            </div>
+            <div style="width: 992;height: 320px;">
+                <div class="block1">1</div>
+                <div class="block1">2</div>
+                <div class="block1">3</div>
+                <div class="block1" style="margin-right: 0;"">4</div>
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 后代选择器 包括所有后代 */
+        /*
+        div a {
+           
+        color: red;
+        }
+        */
+        /* 只想选中儿子 */
+        div>a {
+            color: red;
+        }
+    </style>
+    </style>
+</head>
+
+<body>
+    <div>
+        <a href="#">这是div里的a</a>
+        <p>
+            <a href="">div 里的 p 里的 a</a>
+        </p>
+    </div>
+</body>
+
+</html>
