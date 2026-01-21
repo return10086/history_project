@@ -1,0 +1,10 @@
+#4
+name='程佳乐'
+print(name)
+print('标识',id(name))
+print('类型',type(name))
+print('值',name)
+#5
+name='赵文文'
+print('标识',id(name))
+print('值',name)
