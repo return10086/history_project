@@ -1,0 +1,27 @@
+--cpu Cortex-M3
+"124\startup_stm32f103xb.o"
+"124\main.o"
+"124\gpio.o"
+"124\dma.o"
+"124\tim.o"
+"124\stm32f1xx_it.o"
+"124\stm32f1xx_hal_msp.o"
+"124\stm32f1xx_hal_gpio_ex.o"
+"124\stm32f1xx_hal_tim.o"
+"124\stm32f1xx_hal_tim_ex.o"
+"124\stm32f1xx_hal.o"
+"124\stm32f1xx_hal_rcc.o"
+"124\stm32f1xx_hal_rcc_ex.o"
+"124\stm32f1xx_hal_gpio.o"
+"124\stm32f1xx_hal_dma.o"
+"124\stm32f1xx_hal_cortex.o"
+"124\stm32f1xx_hal_pwr.o"
+"124\stm32f1xx_hal_flash.o"
+"124\stm32f1xx_hal_flash_ex.o"
+"124\stm32f1xx_hal_exti.o"
+"124\system_stm32f1xx.o"
+"124\grb.o"
+--library_type=microlib --strict --scatter "124\124.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "124.map" -o 124\124.axf

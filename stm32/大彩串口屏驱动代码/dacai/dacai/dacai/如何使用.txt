@@ -1,0 +1,16 @@
+将串口中断配置成空闲中断,每收到一个字符就进一次中断
+
+在串口中断中,将收到的数据通过大彩提供的函数 queue_push(),发送到接收队列
+
+ uint8_t data = USART_ReceiveData(USART1);
+        queue_push(data);
+
+在主程序中,判断队列数据
+size = queue_find_cmd(cmd_buffer,CMD_MAX_SIZE);                              //从缓冲区中获取一条指令         
+
+        if(size>0&&cmd_buffer[1]!=0x07)                                              //接收到指令 ，及判断是否为开机提示
+        {                                                                           
+            ProcessMessage((PCTRL_MSG)cmd_buffer, size);                             //指令处理  
+        } 
+
+

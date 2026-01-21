@@ -1,0 +1,6 @@
+uint8_t code[4];
+code[0]=(uint8_t)(tickend-tickstart)>>24;
+code[1]=(uint8_t)(tickend-tickstart)>>18&0xFF;
+code[2]=(uint8_t)(tickend-tickstart)>>12&0xFF;
+code[3]=(uint8_t)(tickend-tickstart)&0xFF;
+	HAL_UART_Transmit(&huart1,code,4,100);
